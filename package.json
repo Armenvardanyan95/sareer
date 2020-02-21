@@ -1,0 +1,28 @@
+{
+  "name": "sareer",
+  "version": "1.0.0",
+  "description": "Useful custom operators for RxJS",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "rxjs",
+    "operators",
+    "functional",
+    "programming"
+  ],
+  "author": "Armen Vardanyan",
+  "license": "MIT",
+  "dependencies": {
+    "@types/jest": "^25.1.2",
+    "rxjs": "^6.5.4"
+  },
+  "devDependencies": {
+    "@types/node-fetch": "^2.5.4",
+    "jest": "^25.1.0",
+    "node-fetch": "^2.6.0",
+    "typescript": "^3.7.5"
+  }
+}
