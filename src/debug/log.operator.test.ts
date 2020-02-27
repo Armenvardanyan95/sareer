@@ -1,6 +1,10 @@
+import { of } from 'rxjs';
+
 import { log } from './log.operator';
-import { tap } from 'rxjs/operators';
 
 test('log operator should return a tap', () => {
-    expect(log()).toEqual(tap(e => console.log()))
+    const consoleLogSpy = jest.spyOn(console, 'log');
+    of(1).pipe(log()).subscribe(() => {
+        expect(consoleLogSpy).toHaveBeenCalledWith('Logging item: 1 ');
+    })
 });
