@@ -2,5 +2,6 @@
     "exclude": "**/*+(e2e|spec|index).ts",
     "theme": "minimal",
     "name": "Sareer | RxJS operators",
-    "readme": "./README.md"
+    "readme": "./README.md",
+    "excludeNotExported": true
 }
